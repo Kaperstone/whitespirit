@@ -23,6 +23,7 @@ body{
   background-size:cover;
   position:absolute;
   width:100%;
+  overflow:hidden;
   border-bottom: 1px solid #000
 }
 #char-bg div{
