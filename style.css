@@ -4,6 +4,9 @@ body{
   margin:0;
   text-align:center
 }
+body > img{
+  position:relative
+}
 #header{
   height: 80px;
   background: #fff;
@@ -26,12 +29,41 @@ body{
   overflow:hidden;
   border-bottom: 1px solid #000
 }
-#char-bg div{
+#char-bg > div{
   width:1400px;
   position:absolute;
   left:50%;
   margin-left:-700px;
-  margin-top:50px;
+  margin-top:100px
+}
+#char-bg > div div:first-child{
+  float:right
+}
+#char-bg > div div:last-child{
+  float:left
+}
+#char-bg img{
+  position:relative
+}
+#char-bg > div div:first-child img:first-child{
+  left:490px;
+  top:16px;
+  width:200px
+}
+#char-bg > div div:first-child img:last-child{
+  top:16px;
+  width:400px;
+  left:64px
+}
+#char-bg > div div:last-child img:first-child{
+  width:178px;
+  top:38px;
+  left:-43px
+}
+#char-bg > div div:last-child img:last-child{
+  top:38px;
+  left:-334px;
+  width:502px
 }
 @media screen and (min-width:975px) {
   #container{
@@ -49,7 +81,7 @@ body{
     width:100%
   }
 }
-#info {
+#info{
   position: relative;
   top: -75px
 }
@@ -58,6 +90,43 @@ body{
   margin:0 auto;
   position:relative;
   height:600px
+}
+#container > div{
+  padding:5px
+}
+#container > div > div:first-child{
+  width:100%;
+  height:400px;
+  background:url('images/bg.jpg');
+  background-size:cover;
+  text-align:left
+}
+#container > div > div:first-child span{
+  color:#fff;
+  background:rgba(0,0,0,.5);
+  padding:5px 8px;
+  position:relative;
+  left:15px;
+  top:15px
+}
+#container > div > div:nth-child(2){
+  display:table;
+  width:100%;
+  height:100px
+}
+#container > div > div:nth-child(2) > div{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center
+}
+#container > div > div:nth-child(2) > div div{
+  display:inline-block;
+  padding:5px 8px;
+  background:#3894FF;
+  color:#fff;
+  border-radius:5px;
+  position:relative;
+  z-index:9
 }
 #m{
   display:table;
@@ -97,8 +166,11 @@ body{
 #m div:first-child p{
   border-left:1px solid rgba(0,0,0,.16)
 }
+h1,h4{
+  text-transform:uppercase
+}
 h1{
-  margin:0
+  margin:0;
 }
 a{
   text-decoration:none
@@ -106,7 +178,6 @@ a{
 h4{
   color:#000;
   margin:0 0 15px;
-  text-transform:uppercase
 }
 #info div{
   padding:50px 10px;
@@ -128,13 +199,13 @@ h4{
 #info div div:last-child{
   width:60%
 }
-#info div:nth-child(even) div{
+#info div:nth-child(even) div,#info div:nth-child(even) img{
   float:right
 }
 #info div:nth-child(odd) div{
   float:left
 }
-#footer {
+body > div:last-child{
   background: #363636;
   padding: 5px 0;
   text-align: center;
@@ -144,6 +215,6 @@ h4{
   width: 100%;
   bottom: 0
 }
-#footer a{
+body > div:last-child a{
   color:#fff
 }
