@@ -72,7 +72,7 @@ body > img{
   #header ul{
     width:975px
   }
-  #header div{
+  #header div>div{
     font-size: 13px;
   }
 }
@@ -83,7 +83,7 @@ body > img{
   #header ul{
     width:92%
   }
-  #header div{
+  #header div>div{
     font-size: 11px;
     white-space: normal;
     word-break: break-word;
@@ -144,11 +144,11 @@ body > img{
   position:relative;
   padding:0;
 }
-#header div{
+#header div>div{
   font-size:13px;
   color:#888
 }
-#header p{
+#header li>div{
   height: 50px;
   width: 100%;
   border-right: 1px solid rgba(0,0,0,.16);
