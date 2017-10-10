@@ -14,23 +14,23 @@
         <li><div>Home<div>Go Home, you're drunk</div></div></li>
         <li><div>Forum<div>Talk with the community!</div></div></li>
         <li><div>Ranking<div>Who's the top player?</div></div></li>
-        <li><div>Ban list<div>See who got last banned</div></div></li>
-        <li><div>Staff list<div>See who is the boss</div></div></li>
+        <li><div>Ban list<div>See latest banned players</div></div></li>
+        <li><div>Staff list<div>See who manage this server</div></div></li>
       </ul>
     </div>
     <div id="char-bg">
       <div>
         <div>
-          <img src="images/gta_char_girl.png" alt="gta_char_girl">
-          <img src="images/gta_char_ak.png" alt="gta_char_ak">
+          <img id="rightf" style="left:597px;opacity:0" src="images/gta_char_girl.png" alt="gta_char_girl">
+          <img id="rightm" style="left:-180px;opacity:0" src="images/gta_char_ak.png" alt="gta_char_ak">
         </div>
         <div>
-          <img src="images/gta_char_girl2.png" alt="gta_char_girl2">
-          <img src="images/gta_char_yel.png" alt="gta_char_yel">
+          <img id="leftf" style="left:-150px;opacity:0" src="images/gta_char_girl2.png" alt="gta_char_girl2">
+          <img id="leftm" style="left:-150px;opacity:0" src="images/gta_char_yel.png" alt="gta_char_yel">
         </div>
       </div>
     </div>
-    <img src="images/whitespirit.png">
+    <img id="logo" style="top:15px;opacity:0" src="images/whitespirit.png" alt="logo">
     <div id="container">
       <div>
         <div>
@@ -66,6 +66,15 @@
         </div>
       </div>
     </div>
-    <div id="footer">Copyright &copy; <a href="http://kaperstone.ru">Kaperstone</a> 2015</div>
+    <div id="footer">Copyright &copy; <a href="http://kaperstone.ru">Kaperstone</a> 2015-2017</div>
+    <script type="text/javascript">
+      setTimeout(function(){
+        document.getElementById("logo").style.cssText="top:0;opacity:1;transition:opacity 250ms, top 300ms";
+        document.getElementById("rightf").style.cssText="left:490px;opacity:1;transition:opacity 250ms, left 300ms";
+        document.getElementById("rightm").style.cssText="left:64px;opacity:1;transition:opacity 250ms, left 300ms";
+        document.getElementById("leftm").style.cssText="left:-334px;opacity:1;transition:opacity 250ms, left 300ms";
+        document.getElementById("leftf").style.cssText="left:-43px;opacity:1;transition:opacity 250ms, left 300ms";
+      },600)
+    </script>
   </body>
 </html>
