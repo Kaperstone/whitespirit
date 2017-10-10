@@ -72,13 +72,22 @@ body > img{
   #header ul{
     width:975px
   }
+  #header div{
+    font-size: 13px;
+  }
 }
 @media screen and (max-width:974px) {
   #container{
     width:100%
   }
   #header ul{
-    width:100%
+    width:92%
+  }
+  #header div{
+    font-size: 11px;
+    white-space: normal;
+    word-break: break-word;
+    word-wrap: break-word;
   }
 }
 #info{
@@ -132,9 +141,10 @@ body > img{
   display:table;
   margin:0 auto;
   font-weight:bold;
-  position:relative
+  position:relative;
+  padding:0;
 }
-#header span{
+#header div{
   font-size:13px;
   color:#888
 }
