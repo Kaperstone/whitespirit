@@ -143,6 +143,7 @@ body > img{
   font-weight:bold;
   position:relative;
   padding:0;
+  height:100%;
 }
 #header div>div{
   font-size:13px;
@@ -173,7 +174,7 @@ body > img{
 #header li:hover,#header li:hover span{
   color:#fff
 }
-#header li:first-child p{
+#header li:first-child>div{
   border-left:1px solid rgba(0,0,0,.16)
 }
 h1,h4{
