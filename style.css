@@ -8,7 +8,7 @@ body > img{
   position:relative
 }
 #header{
-  height: 80px;
+  height: 95px;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -85,9 +85,6 @@ body > img{
   }
   #header div>div{
     font-size: 11px;
-    white-space: normal;
-    word-break: break-word;
-    word-wrap: break-word;
   }
 }
 #info{
@@ -143,23 +140,44 @@ body > img{
   font-weight:bold;
   position:relative;
   padding:0;
-  height:100%;
+  height:100%
 }
 #header div>div{
   font-size:13px;
   color:#888
 }
+#header li>div:before,#header li:first-child>div:after {
+    content:"";
+    position:absolute;
+    display:block;
+    top:0;
+    right:0;
+    height:100%;
+    background:rgba(0,0,0,.16);
+    transition:background 250ms;
+    width:1px;
+}
+#header li:first-child>div:after{
+  left:1px
+}
+#header ul:hover li:first-child>div:after,#header ul:hover li>div:before{
+  background:rgba(0,0,0,.08);
+}
 #header li>div{
+  position:relative;
   height: 50px;
   width: 100%;
-  border-right: 1px solid rgba(0,0,0,.16);
   padding-top: 13px;
+  white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 #header li{
   display:table-cell;
   vertical-align:middle;
   text-align:center;
-  cursor:pointer
+  cursor:pointer;
+  width:calc(100% / 5);
 }
 #header li,#m span{
   transition:all .5s
@@ -173,9 +191,6 @@ body > img{
 }
 #header li:hover,#header li:hover span{
   color:#fff
-}
-#header li:first-child>div{
-  border-left:1px solid rgba(0,0,0,.16)
 }
 h1,h4{
   text-transform:uppercase
